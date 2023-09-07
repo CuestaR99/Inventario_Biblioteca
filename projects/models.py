@@ -6,5 +6,5 @@ class Libros(models.Model):
     autor = models.CharField(max_length=200)
     ano_publicacion = models.CharField(max_length=4)
     mes_publicacion = models.CharField(max_length=50, null=True, blank=True)
-    dia_publicacion = models.IntegerField()
+    dia_publicacion = models.IntegerField(null=True, blank=True)
     genero = models.CharField(max_length=100)
